@@ -8,7 +8,7 @@ This is a program that get you pip if you don't know how to
 
 ### When the program ask to you: Do you have pip install?
 
-If you write Y (yes) the program close the window
+If you write Y (yes) the program close the window                                                                                                                        
 If you write N (no) the program open Fix-Pip.bat
 
 ### In Fix-Pip.bat
