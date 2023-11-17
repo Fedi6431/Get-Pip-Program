@@ -12,4 +12,4 @@ If you write Y (yes) the program close the window
 If you write N (no) the program open Fix-Pip.bat
 
 In Fix-Pip.bat
-![Immagine](https://github.com/Fedi6431/Get-Pip-Program/assets/102946457/0d95290c-4687-4fde-94d0-e28cbe668fd2)
+![Immagine](https://github.com/Fedi6431/Get-Pip-Program/assets/102946457/41384941-9f65-4b50-8451-38e7b2f75876)
