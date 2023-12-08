@@ -21,6 +21,3 @@ There are three options:
 • Reinstall                                                                                                                                                              -> Reinstall the pip install                                                                                                                                                                                                                                                                          
 • Delete                                                                                                                                                               -> Delete the pip install                                                                                                                                                                                                                                                                               
 • Close                                                                                                                                                                -> Close the window of the program                                                                                                                                   
-
-## This is a beta version! 
-## Bye! ;)
