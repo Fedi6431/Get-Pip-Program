@@ -1,16 +1,15 @@
 #!/bin/bash
 
-while : 
-do 
-  echo -e "What are you using:\n1) Linux\n2) Tremux\n"
-  
-  read -p "--> " usr_sys
-  
-  if [[ $usr_sys = 1 ]]; then 
-    apt update
-    apt upgrade
-    apt autoremove -y
-  
+echo -e "What are you using:\n1) Linux\n2) Tremux\n"
+
+read -p "--> " usr_sys
+
+if [[ $usr_sys = 1 ]]; then 
+  apt update
+  apt upgrade
+  apt autoremove -y
+
+  while :; do   
     echo -e "Select an option\n1) install\n2) update\n3) remove\n4) close\n"
   
     read -p "--> " selectop
@@ -38,17 +37,19 @@ do
     elif [[ $selectop = 4 ]]; then 
       exit 0 
     fi
-  fi
-  
-  if [[ $usr_sys = 2 ]]; then 
-    pkg update
-    pkg upgrade
-    apt autoremove -y
-  
+  done
+fi
+
+if [[ $usr_sys = 2 ]]; then 
+  pkg update
+  pkg upgrade
+  apt autoremove -y
+
+  while :; do 
     echo -e "Select an option\n1) install\n2) update\n3) remove\n4) close\n"
   
     read -p "--> " selectop
-  
+
     if [[ $selectop = 1 ]]; then 
       pkg install python-pip -y
       echo -e "\n"
@@ -72,5 +73,5 @@ do
     elif [[ $selectop = 4 ]]; then 
       exit 0 
     fi
-  fi
-done
+  done
+fi
