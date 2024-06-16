@@ -31,7 +31,7 @@ if "%X%"=="1" (
 if "%X%"=="2" (
     Title Updating pip on C:\Users\%USERNAME%\AppData\Local\Programs\Python
 	
-    pip uninstall pip
+    pip uninstall pip -y 
 	
     curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
     move C:\Users\%USERNAME%\Desktop\get-pip.py C:\Users\%USERNAME%\AppData\Local\Programs\Python
@@ -47,7 +47,6 @@ if "%X%"=="2" (
 :: remove pip 
 if "%X%"=="3" (
     Title Removing pip
-    del C:\Users\%USERNAME%\AppData\Local\Programs\Python\get-pip.py
     pip uninstall pip -y
 	set /P WAIT=Press enter to continue.
 )
