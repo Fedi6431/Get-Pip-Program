@@ -7,11 +7,7 @@ selectop="Select an option
 4) close
 "
 
-selectsys="What are you using:
-1) Linux
-2) Tremux
-"
-echo $selectsys
+echo -e "What are you using:\n1) Linux\n2) Tremux\n"
 
 read -p "--> " usr_sys
 
