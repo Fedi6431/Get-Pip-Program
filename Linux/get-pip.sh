@@ -1,12 +1,5 @@
 #!/bin/bash
 
-selectop="Select an option
-1) install
-2) update
-3) remove
-4) close
-"
-
 echo -e "What are you using:\n1) Linux\n2) Tremux\n"
 
 read -p "--> " usr_sys
@@ -16,7 +9,9 @@ if [[ $usr_sys = 1 ]]; then
   apt upgrade
   apt autoremove -y
 
-  echo $selectop
+  echo "Select an option\n1) install\n2) update\n3) remove\n4) close\n"
+
+  read -p "--> " selectop
 
   if [[ $selectop = 1 ]]; then 
     sudo apt install python3-pip -y 
@@ -46,7 +41,9 @@ if [[ $usr_sys = 2 ]]; then
   pkg upgrade
   apt autoremove -y
 
-  echo $selectop
+  echo "Select an option\n1) install\n2) update\n3) remove\n4) close\n"
+
+  read -p "--> " selectop
 
   if [[ $selectop = 1 ]]; then 
     pkg install python-pip -y
