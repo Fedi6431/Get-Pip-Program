@@ -48,7 +48,7 @@ if "%X%"=="2" (
 if "%X%"=="3" (
     Title Removing pip
     pip uninstall pip -y
-	set /P WAIT=Press enter to continue.
+    set /P WAIT=Press enter to continue.
 )
 
 :: close cmd
