@@ -37,6 +37,7 @@ if [[ $usr_sys = 1 ]]; then
     elif [[ $selectop = 4 ]]; then 
       exit 0 
     fi
+    clear
   done
 fi
 
@@ -73,5 +74,6 @@ if [[ $usr_sys = 2 ]]; then
     elif [[ $selectop = 4 ]]; then 
       exit 0 
     fi
+    clear
   done
 fi
