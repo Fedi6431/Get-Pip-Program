@@ -8,7 +8,9 @@ if [[ $usr_sys = 1 ]]; then
   apt update
   apt upgrade
   apt autoremove -y
-
+  
+  clear
+  
   while :; do   
     echo -e "Select an option\n1) install\n2) update\n3) remove\n4) close\n"
   
@@ -46,6 +48,8 @@ if [[ $usr_sys = 2 ]]; then
   pkg upgrade
   apt autoremove -y
 
+  clear
+  
   while :; do 
     echo -e "Select an option\n1) install\n2) update\n3) remove\n4) close\n"
   
