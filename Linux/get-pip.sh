@@ -35,6 +35,8 @@ if [[ $usr_sys = 1 ]]; then
     
   elif [[ $selectop = 4 ]]; then 
     exit 0 
+  fi
+fi
 
 if [[ $usr_sys = 2 ]]; then 
   pkg update
@@ -67,4 +69,5 @@ if [[ $usr_sys = 2 ]]; then
     
   elif [[ $selectop = 4 ]]; then 
     exit 0 
+  fi
 fi
